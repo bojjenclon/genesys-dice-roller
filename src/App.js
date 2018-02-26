@@ -328,7 +328,7 @@ class App extends Component {
     const mapDice = (arr, rolls, type, inverted) => {
       for (let i = 0; i < rolls.length; i++) {
         arr.push(
-          <Grid item xl={1} key={i}>
+          <Grid item key={i}>
             <Die face={rolls[i]} type={type} inverted={inverted} />
           </Grid>
         )
